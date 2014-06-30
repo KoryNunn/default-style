@@ -7,7 +7,7 @@ if(typeof window !== 'undefined'){
 }
 
 function insertTag(){
-    currentWindow.document.head.insertBefore(defaultStyles);
+    currentWindow.document.head.insertBefore(defaultStyles, currentWindow.document.head.childNodes[0]);
 }
 
 if(currentWindow){
