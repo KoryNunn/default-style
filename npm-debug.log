@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'pub' ]
+2 info using npm@1.4.16
+3 info using node@v0.10.28
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/kory/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/kory/.npm/defaultStyle/1.0.0/package.tgz', '.' ]
+12 verbose tarball /home/kory/.npm/defaultStyle/1.0.0/package.tgz
+13 verbose folder .
+14 info prepublish defaultStyle@1.0.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/kory/.npm/1f1177db-tar.lock
+17 silly lockFile 6ed842e7-m-defaultStyle-1-0-0-package-tgz tar:///home/kory/.npm/defaultStyle/1.0.0/package.tgz
+18 verbose lock tar:///home/kory/.npm/defaultStyle/1.0.0/package.tgz /home/kory/.npm/6ed842e7-m-defaultStyle-1-0-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 6ed842e7-m-defaultStyle-1-0-0-package-tgz tar:///home/kory/.npm/defaultStyle/1.0.0/package.tgz
+22 silly lockFile 6ed842e7-m-defaultStyle-1-0-0-package-tgz tar:///home/kory/.npm/defaultStyle/1.0.0/package.tgz
+23 silly lockFile 2e73d321-y-npm-defaultStyle-1-0-0-package /home/kory/.npm/defaultStyle/1.0.0/package
+24 verbose lock /home/kory/.npm/defaultStyle/1.0.0/package /home/kory/.npm/2e73d321-y-npm-defaultStyle-1-0-0-package.lock
+25 silly lockFile 2e73d321-y-npm-defaultStyle-1-0-0-package /home/kory/.npm/defaultStyle/1.0.0/package
+26 silly lockFile 2e73d321-y-npm-defaultStyle-1-0-0-package /home/kory/.npm/defaultStyle/1.0.0/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'defaultStyle',
+29 silly publish   version: '1.0.0',
+29 silly publish   main: 'index.js',
+29 silly publish   directories: { test: 'test' },
+29 silly publish   scripts: { test: 'node test' },
+29 silly publish   author: '',
+29 silly publish   license: 'ISC',
+29 silly publish   devDependencies: { crel: '^1.1.2', grape: '^1.0.0' },
+29 silly publish   dependencies: { crel: '^1.1.2', grape: '^1.0.0' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/KoryNunn/default-style.git' },
+29 silly publish   bugs: { url: 'https://github.com/KoryNunn/default-style/issues' },
+29 silly publish   homepage: 'https://github.com/KoryNunn/default-style',
+29 silly publish   description: 'Simple default style helper for client-side components.',
+29 silly publish   readme: '# default-style\n\nSimple default style helper for client-side components.\n\ndefault-style will only insert one style tag into the page, which will be used for all styles added.\n\n# Usage\n\n    npm install default-style\n\nThen in js:\n\n    // Load the constructor\n    var DefaultStyle = require(\'default-style\');\n\n    // Make a new default style\n    var style = new DefaultStyle(\'.things:{height:20px;}\');\n\nThe above will add the defined style to the document\'s head element.\n\nYou can remove the style at any point via:\n\n    style.remove();\n\nThis will remove the element from the DOM, it can be re-inserted at any time using:\n\n    style.insert();\n\nYou can get or set the cssText at any time using:\n\n    // Get:\n    var cssText = style.css();\n\n    // Set:\n    style.css(cssText);\n\nIf you don\'t want the style added to the page immediately, you can prevent it:\n\n    // Don\'t immediately insert the style\n    var style = new DefaultStyle(\'.things:{height:20px;}\', true);\n\nInternally, default-style has a textNode that contains the cssText. By default it gets added to a style tag in the head. You can optionally give the DefaultStyle instance a target to insert the textNode into:\n\n    style.insert(someOtherDomNode);\n\nAnd the node its self can be accessed via:\n\n    style._node',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '09a5feb57cd2c610800975f65663c091a0493082',
+29 silly publish   _id: 'defaultStyle@1.0.0',
+29 silly publish   _shasum: 'fb62c69ec76bcedd0e9d95d0ecc9c5d9a4e4d572',
+29 silly publish   _from: '.' }
+30 verbose request where is /defaultStyle
+31 verbose request registry https://npm.yoik.net:8888/
+32 verbose request id 7d3873a4e56de6fc
+33 verbose url raw /defaultStyle
+34 verbose url resolving [ 'https://npm.yoik.net:8888/', './defaultStyle' ]
+35 verbose url resolved https://npm.yoik.net:8888/defaultStyle
+36 verbose request where is https://npm.yoik.net:8888/defaultStyle
+37 info trying registry request attempt 1 at 13:51:52
+38 http PUT https://npm.yoik.net:8888/defaultStyle
+39 http 403 https://npm.yoik.net:8888/defaultStyle
+40 verbose headers { 'accept-ranges': 'bytes',
+40 verbose headers   'cache-control': 'max-age=30',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   date: 'Mon, 30 Jun 2014 03:50:13 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-served-by': 'cache-syd1620-SYD',
+40 verbose headers   'x-timer': 'S1404100212.478997,VS0,VE713',
+40 verbose headers   'content-length': '76',
+40 verbose headers   connection: 'keep-alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden New packages must have all-lowercase names: defaultStyle
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+42 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+42 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:123:22)
+42 error     at Request.EventEmitter.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:893:14)
+42 error     at Request.EventEmitter.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:844:12)
+42 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+42 error     at _stream_readable.js:919:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.11.0-12-generic
+45 error command "node" "/usr/bin/npm" "pub"
+46 error cwd /home/kory/dev/defaultStyle
+47 error node -v v0.10.28
+48 error npm -v 1.4.16
+49 verbose exit [ 1, true ]
